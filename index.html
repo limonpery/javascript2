@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Complatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/javascripttodolist/css/style.css" />
+    <link 
+       rel="stylesheet"  
+       href="https://cdn.jsdelivr.net/npm/bootsrap@4.6.0/dist/css/bootsrap.min.css"
+       integrity="sha384-BOvP5xmATwl +K9KROJQERJvTumQWOnPEzvF6L/Z6nronJ3oUOFUFpCJEUQouq2+1"
+       crossorigin="anonymous"
+       />
+       
+    <title>Yapılacaklar Listesi</title>
+</head>
+<body>
+    <div class="mr-1" style="position: relative;" >
+        <div style="position: absolute; top: 0; right: 0;" >
+            <div 
+            id="livetoast"
+            class="toast success hide"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+            data-delay="4000"
+            >
+            <div> 
+                <button
+                type="button"
+                class="close"
+                data-dismiss="toast"
+                aria-label="close"
+                >
+                <span aria-hideden="true">&times;</span>
+            </button>
+             </div>
+             <div class="toast-body">Listeye Eklendi.</div>
+
+            </div>
+
+        </div>
+
+    </div class="mr-1" style="position: relative">
+    <div style="position: absolute; top: 0; right: 0;">
+        <div
+        id="livetoast"
+        class="toast error hide"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+        data-delay="4000"
+        >
+        <div>
+            <button
+            type="button"
+            class="close"
+            data-dismiss="toast"
+            aria-label="Close"
+             >
+             <span aria-hiden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">Listeye boş ekleme yapamazsınız!</div>
+    </div>
+ 
+    </div>
+    <div>
+        <div class="container">
+            <div class="header">
+                <img 
+                src=
+                <img style="display: block;-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);" src="https://raw.githubusercontent.com/Kodluyoruz/taskforce/main/javascript/javascript-temel/odev2/figures/todolist.gif">"https://cdn.sanity.io/images/9kdepild/production/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png"
+                     class="mb-1"
+                 alt=""
+                 />
+                 <h2>Yapılacaklar Lİstesi</h2>
+                 <input type="text" id="task" placeholder="Bugün ne yapacaksın?" />
+                 <span onclick="newElement ()" id="livetoastBtn" class="button" 
+                 >Ekle</span
+                 >
+
+            </div>
+            <ul id="list">
+                <li>3 Litre Su İç</li>
+                <li>Ödevleri Yap</li>
+                <li>En Az 3 Saat Kodlama Yap</li>
+                <li>yemep Yap</li>
+                <li>Meditasyon Yap</li>
+            </ul>
+            <script
+            src="https://code.jquery-3.5.1.slim.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqkO9RmUpJ8JgGtD7zP9yug3goQfGIIOyAns"
+            crossorigin="anonymous"
+            ></script>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
